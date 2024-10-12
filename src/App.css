@@ -1,0 +1,449 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #34a0a4, #1a759f, #184e77);
+  color: white;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+.navigation_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta_button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.header_content {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.header_buttons {
+  margin-bottom: 30px;
+}
+
+.primary_button, .showreel-button {
+  background-color: white;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.tags {
+  margin-top: 20px;
+}
+
+.tags span {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Общие стили для App */
+.App {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Стили для секции "Что мы умеем" */
+.services-section {
+  padding: 40px 20px;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  margin-top: 20px;
+}
+
+.service-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.service-header:hover {
+  color: #007bff;
+}
+
+.service-content {
+  padding: 20px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Анимация для контента */
+.service-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Третья секция - Скроллинг текста */
+.scrolling-text-section {
+  background: linear-gradient(180deg, #000000 0%, #2a2a2a 100%);
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+.scrolling-text-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.scrolling-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.scrolling-item {
+  margin: 10px;
+  font-size: 18px;
+  padding: 10px;
+  transition: transform 0.5s;
+}
+
+/* Секция с командой */
+.team-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff; /* Белый фон для контраста с темным фоном предыдущих секций */
+}
+
+.team-content h2 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  color: #222; /* Темный цвет для текста */
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.contact-button {
+  background-color: #005eff; /* Синий цвет кнопки */
+  color: #fff; /* Белый текст */
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #004bcc; /* Немного темнее при наведении */
+}
+
+.team-avatars {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для аватаров */
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1); /* Увеличение аватара при наведении */
+}
+
+.team-description {
+  color: #555; /* Серый цвет для текста под аватарами */
+  font-size: 1rem;
+  margin-top: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-formats-section {
+  padding: 60px 20px;
+  background-color: #0f0f1c; /* Темный фон */
+  color: #fff; /* Белый текст */
+  text-align: center;
+}
+
+.work-formats-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.formats-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.format-card {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.format-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.format-card p {
+  font-size: 0.9rem;
+  color: #c7c7d3;
+}
+
+.format-card.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.step-card {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.step-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.step-card p {
+  font-size: 1rem;
+  color: #c7c7d3;
+}
+.discuss-project-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #fff; /* Светлый фон */
+  color: #000; /* Темный текст */
+}
+
+.contact-info {
+  width: 45%;
+}
+
+.contact-info h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.telegram-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0000ff; /* Синий фон кнопки */
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.form-wrapper {
+  width: 45%;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-form label {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.project-form input,
+.project-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.file-upload-label {
+  cursor: pointer;
+  color: #0000ff;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #0000ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0000cc; /* Темнее при наведении */
+}
+
+.disclaimer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #888;
+}
+.footer {
+  background-color: #111; /* Темный фон */
+  color: #fff; /* Белый текст */
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-links, .footer-social, .footer-contact {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer-links ul, .footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li, .footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+  color: #1e90ff; /* Синий при наведении */
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+
